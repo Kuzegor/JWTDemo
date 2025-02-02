@@ -1,0 +1,28 @@
+GET http://localhost:3000/posts
+Authorization: Bearer <access token>
+###
+
+POST http://localhost:4000/token
+Content-Type: application/json
+
+{
+    "refreshtoken": "<refresh token>"
+}
+###
+
+POST http://localhost:4000/login
+Content-Type: application/json
+
+{
+    "username": "Rich"
+}
+###
+
+DELETE http://localhost:4000/logout 
+Content-Type: application/json
+
+{
+    "refreshtoken": "<refresh token>"
+}
+###
+
